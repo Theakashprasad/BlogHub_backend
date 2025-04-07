@@ -1,16 +1,18 @@
 import { Router } from "express";
 import authenticationMiddleware from "../Middlewares/authenticationMiddleware";
 import upload from "../Middlewares/uploadMiddleware";
-const UserController = require("../Controllers/userController");
+const AuthController = require("../Controllers/authController");
 
 const router = Router();
 
-router.get("/me", authenticationMiddleware, UserController.getUser);
+router.get("/", authenticationMiddleware, AuthController.getUser);
 router.patch(
   "/",
   authenticationMiddleware,
   upload.single("file"),
-  UserController.updateUser
+  AuthController.updateUser
 );
+router.post("/register", AuthController.postSignup);
+router.post("/login", AuthController.postLogin);
 
 export default router;

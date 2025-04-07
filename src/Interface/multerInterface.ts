@@ -6,4 +6,4 @@ interface IMulterS3File {
   size: number;
 }
 
-export default IMulterS3File
+export default IMulterS3File;
