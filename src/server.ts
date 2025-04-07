@@ -12,9 +12,11 @@ connectDB();
 const port = process.env.PORT;
 app.get("/", (req: any, res: any) => res.send("helo world"));
 
+const allowedOrigins = process.env.CLIENT_ORIGINS?.split(",") || [];
+
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: allowedOrigins,
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     credentials: true,
   })
