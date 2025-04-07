@@ -9,7 +9,7 @@ const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
 const accessSecretKey = process.env.JWT_ACCESS_TOKEN_SECRET_KEY;
 const generateAccessToken = async (payload) => {
-    return jsonwebtoken_1.default.sign(payload, accessSecretKey, { expiresIn: '1h' });
+    return jsonwebtoken_1.default.sign(payload, accessSecretKey, { expiresIn: "1h" });
 };
 exports.generateAccessToken = generateAccessToken;
 const verifyToken = async (token) => {

@@ -9,10 +9,10 @@ const multer_s3_1 = __importDefault(require("multer-s3"));
 const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
 const s3 = new client_s3_1.S3Client({
-    region: process.env.S3_REGION || '',
+    region: process.env.S3_REGION || "",
     credentials: {
-        accessKeyId: process.env.S3_ACCESS_KEY || '',
-        secretAccessKey: process.env.S3_SECRET_KEY || '',
+        accessKeyId: process.env.S3_ACCESS_KEY || "",
+        secretAccessKey: process.env.S3_SECRET_KEY || "",
     },
 });
 const upload = (0, multer_1.default)({
@@ -24,9 +24,9 @@ const upload = (0, multer_1.default)({
             cb(null, { fieldName: file.fieldname });
         },
         key: function (req, file, cb) {
-            console.log('djis');
+            console.log("djis");
             cb(null, Date.now().toString());
-        }
-    })
+        },
+    }),
 });
 exports.default = upload;

@@ -11,7 +11,7 @@ const app = express();
 
 connectDB();
 const port = process.env.PORT;
-app.get("/", (req: any, res: any) => res.send("helo world", allowedOrigins));
+app.get("/", (req: any, res: any) => res.send("helo world"));
 
 const allowedOrigins = process.env.CLIENT_ORIGINS;
 
