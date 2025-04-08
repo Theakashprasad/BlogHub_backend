@@ -1,0 +1,61 @@
+﻿# BlogHub - Backend
+
+This is the backend of BlogHub platform built with Node.js, Express.js and mongoDB.
+
+## Features
+
+- User registration and authentication
+  - Login
+  - Registration
+  - Blog Management 
+- CRUD operations for blog 
+  - Listing blog posts
+  - Inline delete & edit options
+  - Popup action for creating new posts
+
+## Technologies Used
+
+- Node.js
+- Express.js
+- MongoDB
+- JWT for authentication
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- MongoDB
+
+### Installation
+
+1. Clone the repository
+   ```sh
+   https://github.com/Theakashprasad/BlogHub_backend.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+2. Install NPM packages
+   ```sh
+   npx tsc
+   ```
+4.  **Environment Variables**:
+
+        Ensure that the environment variables are correctly set in a `.env` file, in the location .env.example is located. Here is an example of the required environment variables:
+
+        ```plaintext
+        MONGODB_URI=mongodb://root:password123@mongodb-primary:27017/
+        PORT=3000
+        REDIS_PASS=password
+        REDIS_URI=redis://default:${REDIS_PASS}@redis:6379
+    ```
+4. Start the server
+   ```sh
+   npm start
+   ```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
