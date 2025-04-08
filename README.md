@@ -1,6 +1,6 @@
 ﻿# BlogHub - Backend
 
-This is the backend of BlogHub platform built with Node.js, Express.js and mongoDB.
+The BlogHub backend is built with Node.js, Express.js, and MongoDB. It handles user authentication using JWT, and provides secure RESTful APIs for blog creation, retrieval, updating, and deletion, ensuring only authors can modify their own posts.
 
 ## Features
 
