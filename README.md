@@ -51,7 +51,7 @@ project-root/
 - CRUD operations for blog 
   - Listing blog posts
   - Inline delete & edit options
-  - Popup action for creating new posts
+  - PopUp action for creating new posts
 
 ## Technologies Used
 
@@ -86,16 +86,18 @@ project-root/
         Ensure that the environment variables are correctly set in a `.env` file, in the location .env.example is located. Here is an example of the required environment variables:
 
         ```plaintext
-        MONGODB_URI=mongodb://root:password123@mongodb-primary:27017/
+        MONGODB_URI=mongodb+srv://akashyoungstar123:810vLuWqUnMXwn7R@blog.8zlcm41.mongodb.net/?retryWrites=true&w=majority&appName=blog
         PORT=3000
-        REDIS_PASS=password
-        REDIS_URI=redis://default:${REDIS_PASS}@redis:6379
+        S3_REGION=eu-north-1
+        S3_BUCKET_NAME=procowebsite
+        S3_ACCESS_KEY = AKIAYS2NUTVDVGO4HEBQ
+        S3_SECRET_KEY = 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
+        JWT_ACCESS_TOKEN_SECRET_KEY = haiThere
+        CLIENT_ORIGINS= http://localhost:5173
+
     ```
 4. Start the server
    ```sh
    npm start
    ```
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
