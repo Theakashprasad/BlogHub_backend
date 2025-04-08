@@ -86,14 +86,7 @@ project-root/
         Ensure that the environment variables are correctly set in a `.env` file, in the location .env.example is located. Here is an example of the required environment variables:
 
         ```
-        MONGODB_URI=mongodb+srv://akashyoungstar123:810vLuWqUnMXwn7R@blog.8zlcm41.mongodb.net/?retryWrites=true&w=majority&appName=blog
-        PORT=3000
-        S3_REGION=eu-north-1
-        S3_BUCKET_NAME=procowebsite
-        S3_ACCESS_KEY = AKIAYS2NUTVDVGO4HEBQ
-        S3_SECRET_KEY = 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
-        JWT_ACCESS_TOKEN_SECRET_KEY = haiThere
-        CLIENT_ORIGINS= http://localhost:5173
+  
 
     ```
 4. Start the server
