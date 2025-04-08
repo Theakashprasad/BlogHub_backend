@@ -9,7 +9,7 @@ project-root/
     └── bloghub/
         └── src/
             ├── config/
-            │   └── ... (config files here)
+            │   └── DB
             │
             ├── controllers/
             │   ├── authController.ts
