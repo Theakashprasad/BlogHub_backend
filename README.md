@@ -85,7 +85,7 @@ project-root/
 
         Ensure that the environment variables are correctly set in a `.env` file, in the location .env.example is located. Here is an example of the required environment variables:
 
-        ```plaintext
+        ```
         MONGODB_URI=mongodb+srv://akashyoungstar123:810vLuWqUnMXwn7R@blog.8zlcm41.mongodb.net/?retryWrites=true&w=majority&appName=blog
         PORT=3000
         S3_REGION=eu-north-1
