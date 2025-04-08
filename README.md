@@ -1,5 +1,6 @@
 ﻿# BlogHub - Backend
-[![bolt.diy: AI-Powered Full-Stack Web Development in the Browser]([./public/social_preview_index.jpg](https://pomodo.s3.eu-north-1.amazonaws.com/Screenshot+2025-04-08+122357.png))]([https://bolt.diy](https://pomodo.s3.eu-north-1.amazonaws.com/Screenshot+2025-04-08+122357.png))
+[![Screenshot](https://pomodo.s3.eu-north-1.amazonaws.com/Screenshot+2025-04-08+122357.png)](https://your-link.com)
+
 The BlogHub backend is built with Node.js, Express.js, and MongoDB. It handles user authentication using JWT, and provides secure RESTful APIs for blog creation, retrieval, updating, and deletion, ensuring only authors can modify their own posts.
 
 ## Project Structure
