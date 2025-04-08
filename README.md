@@ -75,7 +75,7 @@ project-root/
    ```sh
    npm install
    ```
-2. Install NPM packages
+2. Install typeScript
    ```sh
    npx tsc
    ```
