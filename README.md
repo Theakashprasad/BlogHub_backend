@@ -2,6 +2,44 @@
 
 The BlogHub backend is built with Node.js, Express.js, and MongoDB. It handles user authentication using JWT, and provides secure RESTful APIs for blog creation, retrieval, updating, and deletion, ensuring only authors can modify their own posts.
 
+## Project Structure
+```
+project-root/
+└── backend/
+    └── bloghub/
+        └── src/
+            ├── config/
+            │   └── ... (config files here)
+            │
+            ├── controllers/
+            │   ├── authController.ts
+            │   ├── blogController.ts
+            │   └── userController.ts
+            │
+            ├── interfaces/
+            │   ├── blogInterface.ts
+            │   ├── multerInterface.ts
+            │   └── userInterface.ts
+            │
+            ├── middleware/
+            │   ├── authenticationMiddleware.ts
+            │   └── uploadMiddleware.ts
+            │
+            ├── models/
+            │   ├── blog.ts
+            │   └── user.ts
+            │
+            ├── routes/
+            │   ├── authRouter.ts
+            │   ├── blogRouter.ts
+            │   └── userRouter.ts
+            │
+            ├── utils/
+            │   ├── jwt.ts
+            │   └── password.ts
+            │
+            └── server.ts
+```
 ## Features
 
 - User registration and authentication
